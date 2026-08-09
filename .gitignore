@@ -1,0 +1,267 @@
+# ============================================================
+# DevPilot AI — Monorepo .gitignore
+# ============================================================
+
+# ─── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+*.mo
+*.pot
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+.scrapy
+docs/_build/
+.pybuilder/
+target/
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+.pdm.toml
+__pypackages__/
+celerybeat-schedule
+celerybeat.pid
+*.sage.py
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.spyderproject.db
+.spyproject
+.ropeproject
+/site
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+
+# ─── Node / Next.js ──────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+.next/
+out/
+.nuxt
+dist/
+.cache/
+.parcel-cache
+.expo/
+.rn_temp/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+.vercel
+.env*.local
+
+# ─── Docker ──────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ─── Terraform ───────────────────────────────────────────────
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# ─── Kubernetes ──────────────────────────────────────────────
+kubeconfig
+*.kubeconfig
+
+# ─── OS & IDE ─────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── Secrets ──────────────────────────────────────────────────
+*.pem
+*.key
+*.cert
+*.crt
+secrets/
+.secrets/
+.env.production
+.env.staging
+
+# Environment files
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+
+# ─── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ─── Test artifacts ───────────────────────────────────────────
+test-results/
+playwright-report/
+coverage/
+.nyc_output/
+
+# ============================================================
+# DevPilot AI Specific
+# ============================================================
+
+# Local environment files
+.env.local
+.env.development
+.env.test
+.env.production.local
+
+# MCP server runtime
+mcp-servers/.venv/
+mcp-servers/__pycache__/
+mcp-servers/logs/
+mcp-servers/.cache/
+
+# AI model caches
+.huggingface/
+.transformers/
+torch_cache/
+.cache/huggingface/
+.cache/pip/
+
+# Qdrant local storage
+qdrant_storage/
+qdrant_data/
+
+# Redis local dump
+dump.rdb
+
+# PostgreSQL local data
+postgres-data/
+pgdata/
+
+# Docker volumes
+docker-volumes/
+docker-data/
+
+# Local uploads
+uploads/
+temp/
+tmp/
+
+# Certificates
+ssl/
+certificates/
+
+# Generated reports
+reports/
+benchmark/
+artifacts/
+
+# Generated directory inventories
+**/tree.txt
+
+# shadcn
+components.json.bak
+
+# Turbo
+.turbo/
+
+# Next.js build cache
+.next/cache/
+
+# Playwright browser binaries
+playwright/.cache/
+
+# Storybook
+storybook-static/
+
+# Generated API clients
+generated/
+openapi/
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# macOS resource forks
+.AppleDouble
+.LSOverride
+
+# Windows
+Desktop.ini
+
+# Misc editor files
+.history/
+
+# Documentation and local database repair script
+*.md
+!/README.md
